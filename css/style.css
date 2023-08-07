@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    min-height: 100vh;
+}
+.container {
+    padding: 20px;
+    width: 100%;
+    background-color: #f6f6f6;
+    min-height: 100vh;
+}
+.get {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input[type="text"] {
+    flex: 1;
+    height: 54px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    transition: 0.3s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+input[type="text"]:focus {
+    outline: 1px solid #f44336;
+}
+.get_button {
+    height: 53px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.got {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.repos-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.repos-container:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+.info {
+    display: flex;
+}
+.info .repo-url,
+.info .repo-star {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.info .repo-url {
+    text-decoration: none;
+    background-color: #e91363;
+    margin-right: 7px;
+}
+.info .repo-star {
+    background-color: #008688;
+}
