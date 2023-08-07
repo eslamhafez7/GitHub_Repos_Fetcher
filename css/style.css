@@ -80,3 +80,9 @@ input[type="text"]:focus {
 .info .repo-star {
     background-color: #008688;
 }
+@media screen and (max-width: 580px) {
+    .repo-name {
+        line-break: anywhere;
+        padding-right: 10px;
+    }
+}
